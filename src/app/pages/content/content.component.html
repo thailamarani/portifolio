@@ -1,20 +1,27 @@
 <div class="container-content">
-  <a [routerLink]="['']"> << RETORNAR A PÁGINA INICIAL</a>
+  <a [routerLink]="['']"> << RETORNAR À PÁGINA INICIAL</a>
   <div class="container-cover">
     <img
-      src="{{ photoCover }}"
-      alt=""
-      srcset=""
-    >
+    [src]="photoCover"
+    alt=""
+    srcset=""
+    />
   </div>
 
   <div class="container-title">
-    <h1> {{ contentTitle }} </h1>
+    <h1>{{ contentTitle }}</h1>
     <hr />
   </div>
 
   <div class="container-description">
     <hr />
     {{ contentDescription }}
+  </div>
+  <div class="projects">
+    <ul class="project-list">
+      <li *ngFor="let project of projectLinks">
+        <a [href]="project.link" target="_blank">{{ project.name }}</a>
+      </li>
+    </ul>
   </div>
 </div>

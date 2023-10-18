@@ -37,3 +37,9 @@
 .container-description > p {
   color: rgb(201, 201, 201);
 }
+
+.container-links{
+  text-decoration: none;
+  color: rgb(205, 21, 144);
+  cursor: pointer;
+}

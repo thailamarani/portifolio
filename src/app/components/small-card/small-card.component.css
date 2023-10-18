@@ -25,13 +25,12 @@
   margin-top: 15px;
 }
 
-
-.container-menu-bar a {
+.small-card-description {
   text-decoration: none;
-  color: #ffffff;
-  transition: color 0.3s;
+  color: white;
+  cursor: pointer;
 }
 
-.container-menu-bar a:hover {
+.container-small-card a:hover {
   color: rgb(205, 21, 144);
 }
